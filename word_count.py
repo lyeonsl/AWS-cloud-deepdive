@@ -1,6 +1,7 @@
 def word_count(file_path: str) -> dict:
     """
     Count the frequency of each word in a file.
+    pull request
     """
     counts = {}
     with open(file_path, 'r') as f:
@@ -9,5 +10,4 @@ def word_count(file_path: str) -> dict:
             for w in words:
                 word = w.lower()
                 counts[word] = counts.get(word, 0) + 1
-
-    return counts
+return counts
